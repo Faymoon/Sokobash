@@ -40,7 +40,7 @@ do
 	read -rsn 1 key
 
 	case $key in
-	q) clear; exit ;;
+	q) clear; tput cnorm; exit; ;;
 	i) y_move=-1 ;;
 	j) x_move=-1 ;;
 	k) y_move=1 ;;
